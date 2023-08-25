@@ -1,14 +1,19 @@
 *{
     font-family:"Lato", sans-serif;
     margin: 0px;
+    
+}
+body{
+    background-color: #fefae0;
 }
 nav{
     display: flex;
-    background-color: blue;
+    background-color: #283618;
     padding: 5px 60px;
     min-height: 80px;
     justify-content: space-between;
     align-items: center;
+    color: #fefae0;
 }
 nav div{
     float: right;
@@ -17,7 +22,7 @@ nav a {
     margin: 0px 10px;
 }
 main{
-    margin: 60px;
+padding: 40px 60px;
 
 }
 h1, h2 {
