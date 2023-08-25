@@ -1,0 +1,25 @@
+*{
+    font-family:"Lato", sans-serif;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    background-color: blue;
+    padding: 5px 60px;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{
+    float: right;
+}
+nav a {
+    margin: 0px 10px;
+}
+main{
+    margin: 60px;
+
+}
+h1, h2 {
+    font-family: 'Quattrocento', serif;
+    }
