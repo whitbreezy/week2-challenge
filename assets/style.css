@@ -6,6 +6,10 @@
 body{
     background-color: #fefae0;
 }
+header{
+    background-image: url('./pine-needles.jpg');
+    min-height: 400px;
+}
 nav{
     display: flex;
     background-color: #283618;
