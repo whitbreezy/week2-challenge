@@ -54,6 +54,7 @@ width: 100%;
     border: 1px solid #283618;
     padding: 10px;
     min-width: 33%;
+    text-align: center;
 }
 p{
     margin-bottom: 10px;
@@ -65,4 +66,17 @@ img{
 }
 .item1{
     width: 100%;
+    min-height: 300px;
+    background-image: url('./horiseon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:top left; */
+}
+.item2{
+    min-height: 150px;
+    background-image: url('./prework.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-position:center;
 }
