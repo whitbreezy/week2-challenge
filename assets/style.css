@@ -9,6 +9,7 @@ h1, h2, h3 {
     }
 h2, h3{
     margin:10px;
+    padding: 0px;
 }
 body{
     background-color: #fefae0;
@@ -43,7 +44,6 @@ padding: 40px 60px;
 section{
     display: flex;
     flex-direction: column;
-    border: 2px solid #bc6c25;
     margin: 20px auto;
     padding: 20px;
 }
@@ -56,7 +56,6 @@ width: 100%;
 }
 
 .column{
-    border: 1px solid #283618;
     min-width: 30%;
     max-width: 100%;
     margin: 10px;
@@ -83,6 +82,7 @@ p{
 .item2{
     position: relative;
     width: 49%;
+    min-height: 400px;
     background-image: url('./prework2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,4 +111,69 @@ p{
 background-color: #283618;
 padding: 8px 12px;
 text-align: center;
+
+}
+.resume-link{
+    color: #283618;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+   section{
+    padding: 0px;
+   }
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .item1{
+        min-height: 300px;
+        width: auto;
+    }
+    .item2, .item3{
+        min-height: 200px;
+        width: auto;
+    }
+    .link-buttons{
+        width: 50%;
+    }
+
+    }
+
+@media screen and (max-width: 800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-buttons{
+        width: auto;
+    }
+
+    }
+@media screen and (max-width: 540px){
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    nav a{
+        margin-bottom: 10px;
+    }
+    header {
+        min-height: 350px;
+    }
+    .column p {
+        margin: auto;
+    }
+    .project-title{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:400px){
+    .self-portrait{
+        max-width: 150px;
+    } 
+    
 }
