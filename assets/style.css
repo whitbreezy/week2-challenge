@@ -1,31 +1,42 @@
+:root{
+    --dark-green: #283618;
+    --light-green: #606c38;
+    --light: #fefae0;
+}
 *{
     font-family:"Lato", sans-serif;
     margin: 0px;
     box-sizing: border-box;
-    
 }
 h1, h2, h3 {
     font-family: 'Quattrocento', serif;
-    }
+}
 h2, h3{
     margin:10px;
     padding: 0px;
 }
 body{
-    background-color: #fefae0;
+    background-color: var(--light);
 }
 header{
-    background-image: url('./pine-needles.jpg');
+    background-image: url('./images/pine-needles.jpg');
     min-height: 500px;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
-    background-color: #283618;
-    padding: 5px 60px;
+    background-color: var(--dark-green);
+    padding: 10px 60px;
     min-height: 80px;
     justify-content: space-between;
     align-items: center;
-    color: #fefae0;
+    color: var(--light);
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+    /*fixed nav styles from w3 schools*/
 }
 nav div{
     float: right;
@@ -34,13 +45,12 @@ nav a {
     margin: 0px 10px;
 }
 a{
-    color: #fefae0;
+    color: var(--light);
     text-decoration: none;
 }
 main{
 padding: 40px 60px;
 }
-
 section{
     display: flex;
     flex-direction: column;
@@ -51,10 +61,8 @@ section{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-/* flex-wrap: wrap; */
 width: 100%;
 }
-
 .column{
     min-width: 30%;
     max-width: 100%;
@@ -63,18 +71,17 @@ width: 100%;
 p{
     margin-bottom: 10px;
     line-height: 1.5;
-    /* padding: 5px; */
+    
 }
 .self-portrait{
     max-width: 250px;
-    /* margin-left: 40px; */
+    
 }
-
 .item1{
     position: relative;
     width:100%;
     min-height: 500px;
-    background-image: url('./horiseon.png');
+    background-image: url('./images/horiseon.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top center;
@@ -83,7 +90,7 @@ p{
     position: relative;
     width: 49%;
     min-height: 400px;
-    background-image: url('./prework2.png');
+    background-image: url('./images/prework2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -93,35 +100,38 @@ p{
     position: relative;
     width: 49%;
     min-height: 400px;
-    background-image: url('./nbm\ logo\ .jpg');
+    background-image: url('./images/nbm\ logo\ .jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
-
 .project-title {
     position: absolute;
     bottom: 8px;
     right: 16px;
-    background-color: #606c38;
+    background-color: var(--light-green);
     padding: 20px;
     text-align: center;
 }
 .link-buttons{
-background-color: #283618;
+background-color: var(--dark-green);
 padding: 8px 12px;
 text-align: center;
-
+border-radius: 5px;
 }
 .resume-link{
-    color: #283618;
+    color: var(--dark-green);
     text-decoration: underline;
+}
+footer{
+    min-height: 80px;
+    background-color: var(--dark-green);
 }
 
 @media screen and (max-width: 1000px) {
-   section{
+    section{
     padding: 0px;
-   }
+    }
     .row{
         flex-wrap: wrap;
         flex-direction: column;
@@ -137,8 +147,7 @@ text-align: center;
     .link-buttons{
         width: 50%;
     }
-
-    }
+}
 
 @media screen and (max-width: 800px){
     nav{
@@ -148,8 +157,10 @@ text-align: center;
     .link-buttons{
         width: auto;
     }
-
+    header {
+        min-height: 350px;
     }
+}
 @media screen and (max-width: 540px){
     .navlinks{
         display: flex;
@@ -175,5 +186,7 @@ text-align: center;
     .self-portrait{
         max-width: 150px;
     } 
-    
+    h1{
+        text-align: center;
+    }
 }
